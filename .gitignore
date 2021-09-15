@@ -1,0 +1,44 @@
+# Node Modules
+blog-api/node_modules
+blog-app/node_modules
+
+# compiled output
+blog-app/dist
+blog-app/tmp
+blog-app/out-tsc
+# Only exists if Bazel was run
+blog-app/bazel-out
+
+# profiling files
+blog-app/chrome-profiler-events*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+blog-app/.sass-cache
+blog-app/connect.lock
+blog-app/coverage
+blog-app/libpeerconnection.log
+blog-app/npm-debug.log
+blog-app/yarn-error.log
+blog-app/testem.log
+blog-app/typings
+
+# System Files
+blog-app/.DS_Store
+blog-app/Thumbs.db

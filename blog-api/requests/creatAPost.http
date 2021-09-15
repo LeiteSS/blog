@@ -1,0 +1,7 @@
+POST http://localhost:3000/posts
+content-type: application/json
+
+{
+  "name": "Jack Pelado",
+  "message": "Tá maluco rapá"
+}

@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Chico Patriota",
+      "message": "Eu tenho orgulho em ser Brasileiro, Hetero, Patriota, Cidadão, Cristão, Empresário, Negro, Conservador, Pró Família, Pró Arma, Carnívoros, Baiano. Amo a minha Cidade e o meu País."
+    },
+    {
+      "id": 2,
+      "name": "Marcela",
+      "message": "Também,apoio total ao Presidente,primeiro presidente que representa o povo brasileiro conservador,cristão e patriota!"
+    },
+    {
+      "id": 3,
+      "name": "Roberval",
+      "message": "Brasil! Brasil! Eu te amo presidente, acabe com o comunismo, EU TE AMO Presidente EU TE AMO Presidente EU TE AMO Presidente Brasil! Brasil! Deus, Familia, BRASIL! Meu Presidente, esse é o meu presidente."
+    },
+    {
+      "name": "Jack Pelado",
+      "message": "[29/03/2021 22:00]Tá maluco rapá. [29/03/2021 23:59]Menos armas mais livros! [30/03/2021 00:00]Professora chata pra buné, pediu pra ler livro mao grande ai, vo ler não",
+      "id": 4
+    }
+  ]
+}

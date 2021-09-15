@@ -1,0 +1,7 @@
+PUT http://localhost:3000/posts/4
+content-type: application/json
+
+{
+  "name": "Jack Pelado",
+  "message": "[29/03/2021 22:00]Tá maluco rapá. [29/03/2021 23:59]Menos armas mais livros! [30/03/2021 00:00]Professora chata pra buné, pediu pra ler livro mao grande ai, vo ler não"
+}
