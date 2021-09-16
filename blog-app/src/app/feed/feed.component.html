@@ -10,11 +10,11 @@
           <p class="card-text text-center">Vendedor de Pipocas</p>
           <a href="https://github.com/LeiteSS" target="_blank" class="btn btn-outline-dark d-flex justify-content-center">Visitar o Github</a>
           <hr class="mt-4 mb-4">
-          <h6 class="mb-3 text-monospace text-center">
-            Pesquisar Por Nome
-            <input type="text" class="form-control mb-3 w-100">
-            <button class="btn btn-outline-warning w-100">Pesquisar</button>
-          </h6>
+          <div class="form-group">
+            <h6 class="mb-3 text-monospace text-center">Pesquisar</h6>
+            <input class="form-control mb-3 w-100" type="text"
+              placeholder="Pesquisar por um comentário" [(ngModel)]="searchText">
+          </div>
         </div>
       </div>
     </div>
@@ -23,7 +23,14 @@
         <h3 class="text-center mb-4 text-monospace">Digite abaixo os seus comentários:</h3>
         <div class="form-group">
           <label for="name" class="text-monospace">Nome:</label>
-          <input type="text" class="form-control mb-3" name="name" id="name" placeholder="Digite o seu nome">
+          <input
+            type="text"
+            class="form-control mb-3"
+            name="name"
+            id="name"
+            placeholder="Digite o seu nome"
+            [(ngModel)]='post.name'
+          >
         </div>
         <div class="form-group">
           <label for="message" class="text-monospace">Mensagem:</label>
@@ -34,14 +41,25 @@
             cols="30"
             rows="4"
             placeholder="Digite a sua mensagem"
+            [(ngModel)]='post.message'
           ></textarea>
         </div>
         <div class="d-flex justify-content-end">
-          <button type="submit" class="btn btn-outline-info w-25">Publicar</button>
+          <button type="submit" class="btn btn-outline-info w-25" (click)="sendMessage()">Publicar</button>
         </div>
       </div>
       <hr class="mt-5 mb-5">
       <h3 class="text-center mb-4 text-monospace">Comentários</h3>
+      <div class="container">
+        <div class="card mb-4" *ngFor="let post of listPosts | filter: searchText">
+          <div class="card-header">
+            <h4 class="card-title">{{ post.name }}</h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{ post.message }}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
