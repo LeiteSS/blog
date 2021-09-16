@@ -1,6 +1,8 @@
+import { ContactService } from './service/contact.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -30,8 +32,11 @@ import { ContactComponent } from './contact/contact.component';
     HttpClientModule,
     FormsModule,
     Ng2SearchPipeModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    ContactService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
